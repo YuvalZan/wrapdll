@@ -7,7 +7,7 @@ setup(
     name='wrapdll',
     version='0.1',
     author='YuvalZ',
-    author_email='YuvalZan@dev.nul',
+    author_email='zanyuval@gmail.com',
     description='Allows using python annotaions to wrap dlls using ctypes',
     long_description=long_description,
     long_description_content_type='text/markdown',
