@@ -5,7 +5,7 @@ with open('README.md', 'r') as fh:
 
 setup(
     name='wrapdll',
-    version='0.1',
+    version='0.1.1',
     author='YuvalZ',
     author_email='zanyuval@gmail.com',
     description='Allows using python annotaions to wrap dlls using ctypes',
