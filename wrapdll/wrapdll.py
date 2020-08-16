@@ -43,7 +43,7 @@ class BaseDllWrapper():
                            If got a str then tries to convert it to a cdll
         """
         if isinstance(ctypes_dll, str):
-            ctypes_dll = cdll(ctypes_dll)
+            ctypes_dll = cdll.LoadLibrary(ctypes_dll)
         self._dll = ctypes_dll
 
 class RCEnum(IntEnum):
