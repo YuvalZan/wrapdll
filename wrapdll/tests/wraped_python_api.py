@@ -1,4 +1,6 @@
+import sys
 from ctypes import *
+from pathlib import Path
 from wrapdll import BaseDllWrapper, wrapdll 
 
 class PythonAPI(BaseDllWrapper):
@@ -7,7 +9,8 @@ class PythonAPI(BaseDllWrapper):
     """
 
     def __init__(self):
-        super().__init__(pythonapi)
+        api = str(Path(sys.exec_prefix, 'python3.dll'))
+        super().__init__(api)
 
     @wrapdll
     def PyBytes_FromStringAndSize(self, v: c_char_p, len: c_size_t) -> py_object:
